@@ -41,17 +41,14 @@ function newRound() {
   } else {
     var winPercent = (playerPoints / limit) * 100;
     if (winPercent >= 70) {
-      setEndgameModal("Win", `${winPercent}% right! GOOD GAME!`);
+      alert(`${winPercent}% right! GOOD GAME!`);
+      setEndgameModal("Win");
     } else {
-      setEndgameModal("Lose", `${winPercent}% right! BAD GAME!`);
+      alert(`${winPercent}% right! BAD GAME! YOU LOSE!`);
     }
     setNum = 0;
     playerPoints = 0;
   }
-}
-
-function setEndgameModal(query, text) {
-  tenorService.grabData(query, text);
 }
 
 async function buildQuestion(setNum) {
