@@ -1,0 +1,67 @@
+.flex2 {
+  margin-top: 5%;
+  display: flex;
+  flex-flow: nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.container {
+  margin-top: 10%;
+}
+
+.ninja {
+  visibility: hidden;
+  display: none;
+}
+
+.response {
+  display: flexbox;
+  justify-content: space-around;
+  word-wrap: break-word;
+  white-space: normal;
+  width: 40%;
+  margin: 5%;
+  background-color: white;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  cursor: pointer;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.response:hover {
+  border-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
+  color: #202124;
+}
+
+.response:focus {
+  border-color: #4285f4;
+  outline: none;
+}
+
+.title {
+  font-family: "Cairo Play", cursive;
+  font-size: 4em;
+  margin-bottom: 5%;
+}
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/30/12/16/question-mark-1872665_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#box {
+  backdrop-filter: blur(13px);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5%;
+}
